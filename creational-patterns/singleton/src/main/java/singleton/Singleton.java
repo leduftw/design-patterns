@@ -14,4 +14,21 @@ public class Singleton {
         return singleObject;
     }
 
+    private int number = 0;
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "Singleton{" +
+                "number=" + number +
+                '}';
+    }
+
 }
