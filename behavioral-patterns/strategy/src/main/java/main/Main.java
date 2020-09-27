@@ -2,6 +2,7 @@ package main;
 
 import strategy.InsertionSortStrategy;
 import sorter.Sorter;
+import strategy.SelectionSortStrategy;
 
 public class Main {
 
@@ -11,11 +12,11 @@ public class Main {
 
         Sorter sorter = new Sorter();
 
+        sorter.setSortingStrategy(new SelectionSortStrategy());
         sorter.sort(arr1);
         System.out.println();
 
         sorter.setSortingStrategy(new InsertionSortStrategy());
-
         sorter.sort(arr2);
         System.out.println();
     }

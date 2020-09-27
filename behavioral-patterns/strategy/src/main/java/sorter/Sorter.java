@@ -1,6 +1,5 @@
 package sorter;
 
-import strategy.SelectionSortStrategy;
 import strategy.SortingStrategy;
 
 import java.util.Arrays;
@@ -9,12 +8,10 @@ public class Sorter {
 
     private SortingStrategy sortingStrategy;
 
-    public Sorter() {
-        sortingStrategy = new SelectionSortStrategy();
-    }
+    public Sorter() { }
 
     public Sorter(SortingStrategy sortingStrategy) {
-        this.sortingStrategy = sortingStrategy;
+        setSortingStrategy(sortingStrategy);
     }
 
     public void setSortingStrategy(SortingStrategy sortingStrategy) {
