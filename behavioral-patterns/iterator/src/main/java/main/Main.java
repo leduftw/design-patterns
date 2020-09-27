@@ -39,7 +39,7 @@ public class Main {
         Items items = new Items(List.of(item1, item2, item3, item4, item5));
 
         // Iterating through items with given tag
-        for (Iterator<Item> itemIterator = items.iterator("t4"); itemIterator.hasNext(); ) {
+        for (Iterator<Item> itemIterator = items.iterator("t6"); itemIterator.hasNext(); ) {
             Item item = itemIterator.next();
             System.out.println(item);
         }
