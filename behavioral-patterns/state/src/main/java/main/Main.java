@@ -8,6 +8,15 @@ public class Main {
 
     public static void main(String[] args) {
         try(Scanner scanner = new Scanner(System.in)) {
+            
+            /*
+                                  D    u    s    k    o
+                                o -> o -> o -> o -> o -> o
+                                ^    ^    ^    ^    ^    ^  
+                                |    |    |    |    |    |
+                    States:   Start  D    U    S    K    O
+            */
+            
             FiniteStateAutomaton finiteStateAutomaton = new FiniteStateAutomaton();
             System.out.println("Finite-State Automaton created");
             System.out.println(finiteStateAutomaton + "\n");
