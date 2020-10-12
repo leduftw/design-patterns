@@ -8,8 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         try(Scanner scanner = new Scanner(System.in)) {
-            
+
             /*
+                    Complete language of this automaton is word Dusko.
+
                                   D    u    s    k    o
                                 o -> o -> o -> o -> o -> o
                                 ^    ^    ^    ^    ^    ^  
